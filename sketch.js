@@ -59,20 +59,20 @@
        createTrack(355); 
        createTrack(510); 
 
-       border1=createSprite(0,130,3300,20);
+       border1=createSprite(0,130,3300,10);
        border1.shapeColor="white";
 
-       border2=createSprite(0,280,3300,20);
+       border2=createSprite(0,280,3300,10);
        border2.shapeColor="white";
 
-       border3=createSprite(0,430,3300,20);
+       border3=createSprite(0,430,3300,10);
        border3.shapeColor="white";
       }
 
       function createTrack(yaxis) {
 
         for (var i = 50; i < 1200; i = i + 150) {
-          var track = createSprite(i, yaxis, 60, 10);
+          var track = createSprite(i, yaxis, 60, 7);
           track.shapeColor="white";
   
       }
@@ -93,10 +93,10 @@
         car1.addAnimation("car",caranimation5);
       }
       if(deformation<100){
-        car1.addAnimation("car",caranimation4);
+        car1.addAnimation("car",caranimation3);
       }
       if(deformation<180){
-        car1.addAnimation("car",caranimation4);
+        car1.addAnimation("car",caranimation3);
       }
       }
 
@@ -113,10 +113,10 @@
         car2.addAnimation("car",caranimation2);
       }
       if(deformation2<180 && deformation2>100){
-        car2.addAnimation("car",caranimation3);
+        car2.addAnimation("car",caranimation4);
       }
       if(deformation2<100){
-        car2.addAnimation("car",caranimation4);
+        car2.addAnimation("car",caranimation3);
       }
       if(deformation2<180){
         car2.addAnimation("car",caranimation2);
@@ -132,16 +132,16 @@
         car3.velocityX=0;
         var deformation3=(0.5*weight3*speed3*speed3)/2250;
 
-        car3.addAnimation("car",caranimation3);
+        car3.addAnimation("car",caranimation4);
       }
       if(deformation3<180 && deformation3>100){
         car3.addAnimation("car",caranimation5);
       }
       if(deformation3<100){
-        car3.addAnimation("car",caranimation4);
+        car3.addAnimation("car",caranimation1);
       }
       if(deformation3<180){
-        car3.addAnimation("car",caranimation5);
+        car3.addAnimation("car",caranimation3);
       }
       }
 
